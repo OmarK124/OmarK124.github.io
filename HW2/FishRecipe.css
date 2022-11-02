@@ -1,0 +1,230 @@
+body {
+  background-image: url("silverware.jpg");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-family: "Segoe UI";
+}
+hr {
+  width: 50%;
+  /* margin: 0 auto; */
+}
+.green-h1-box {
+  background-color: #f0f0f0;
+  margin: auto;
+  margin-top: 2vw;
+  margin-bottom: 1vw;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 0.15rem solid #73ad21;
+  border-radius: 2rem;
+  padding: 1vw 13vw 1vw 13vw;
+}
+.green-h1 {
+  color: #a4a400;
+}
+.green-h2-box {
+  background-color: #f0f0f0;
+  margin-left: 35vw;
+  margin-right: 35vw;
+  margin-top: 2vw;
+  margin-bottom: 1vw;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 0.15rem solid #73ad21;
+  border-radius: 2rem;
+  padding: 0.5vw 3vw 0.5vw 3vw;
+}
+
+.green-h2 {
+  color: #a4a400;
+}
+.index-img {
+  border-radius: 100%;
+  width: 20rem;
+}
+
+li {
+  list-style-image: url("fish_icon_24.png");
+  text-align: left;
+}
+ol > li {
+  list-style-image: initial;
+}
+.ol-grid {
+  columns: 3;
+  margin: 0 auto;
+  width: 1024px;
+}
+.add-border {
+  border-left: 0.25rem solid #73ad21;
+  border-right: 0.25rem solid #73ad21;
+}
+
+.grid-seperator {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 341px 341px 341px;
+  grid-template-rows: auto auto auto auto;
+  margin: 0 auto;
+}
+.grid-seperator > li {
+  padding-left: 5px;
+}
+.grid-seperator > li:nth-child(-n + 5) {
+  border-left: 0.25rem solid #73ad21;
+  border-right: 0.25rem solid #73ad21;
+}
+.grid-seperator > img {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+.image-flexbox-container {
+  display: flex;
+  flex-direction: row;
+}
+#fish-img {
+  border-radius: 100%;
+  width: 20rem;
+  grid-row-start: 0;
+  grid-row-end: 5;
+}
+#comments-field {
+  margin: 0 37.5vw;
+}
+.signup-field {
+  margin: 0 42vw;
+}
+#search-href {
+  color: #73ad21;
+}
+blockquote {
+  background-color: yellow;
+}
+/* Mobile */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .index-images {
+    display: grid;
+    grid-template-columns: auto;
+    width: fit-content;
+    margin: auto;
+    column-gap: 1vw;
+  }
+  .index-img {
+    border-radius: 100%;
+    width: 80vw;
+    padding-bottom: 0.5rem;
+  }
+  .green-h1-box {
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+
+  .index-images div:nth-child(odd) {
+    border-right: 0.15rem solid #73ad21;
+    padding-left: 1vw;
+    padding-right: 1vw;
+  }
+  .grid-seperator {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-auto-flow: row;
+  }
+  .grid-seperator > li:nth-child(-n + 5) {
+    border: none;
+  }
+  #fish-img {
+    width: 80vw;
+    margin-bottom: 2vw;
+  }
+  .ol-grid {
+    columns: 1;
+  }
+  .add-border {
+    border: none;
+  }
+  .green-h2-box {
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+  #comments-field {
+    margin: 0 10vw;
+  }
+  .signup-field {
+    margin: 0 30vw;
+  }
+}
+
+/* Tablets */
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .index-images {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: fit-content;
+    margin: auto;
+    column-gap: 1vw;
+  }
+  .grid-seperator {
+    grid-template-columns: 40vw 40vw;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-auto-flow: row;
+  }
+  .grid-seperator > li:nth-child(-n + 5) {
+    border: none;
+    border-left: #73ad21 0.25rem solid;
+  }
+  .grid-seperator > li {
+    border-left: #73ad21 0.25rem solid;
+  }
+  #fish-img {
+    width: 40vw;
+    margin-bottom: 2vw;
+    grid-row-start: 1;
+    grid-row-end: 7;
+  }
+  .ol-grid {
+    columns: 2;
+  }
+  .add-border {
+    border: none;
+    border-left: 0.25rem solid #73ad21;
+  }
+  .border-tablet {
+    border-left: 0.25rem solid #73ad21;
+  }
+
+  .green-h2-box {
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+  #comments-field {
+    margin: 0 10vw;
+  }
+  .signup-field {
+    margin: 0 30vw;
+  }
+}
+/* Desktops */
+@media only screen and (min-width: 1200px) {
+  .index-images {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: fit-content;
+    margin: auto;
+    column-gap: 1vw;
+  }
+
+  .index-images div:nth-child(2) {
+    border-right: 0.15rem solid #73ad21;
+    border-left: 0.15rem solid #73ad21;
+    padding-left: 1vw;
+    padding-right: 1vw;
+  }
+}
